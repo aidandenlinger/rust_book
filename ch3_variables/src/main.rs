@@ -97,6 +97,6 @@ fn main() {
     println!("[Arrays] [3;5] = {:?}", a);
 
     // access as normal. what happens with invalid access?
-    let _element = a[10];
+    // let _element = a[10];
     // compiles fine, but runtime errors before the memory is accessed
 }
