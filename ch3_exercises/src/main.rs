@@ -63,8 +63,8 @@ fn days_printer(day: u32) {
         "On the {} day of Christmas, my true love sent to me",
         WORDS[day as usize]
     );
-    // note: range is exclusive
-    for i in (0..day + 1).rev() {
+    // = makes range inclusive
+    for i in (0..=day).rev() {
         println!("{}", PRESENTS[i as usize]);
     }
     println!();
